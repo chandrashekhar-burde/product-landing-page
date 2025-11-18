@@ -1,0 +1,175 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: azure;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #e6d6eb;
+    padding: 10px 0;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+main {
+    max-width: 70vw;
+    width: 100%;
+    margin: auto;
+}
+
+#form {
+    margin: 20px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+
+#form h1 {
+    font-size: 1.6rem;
+}
+
+#form input:nth-of-type(1) {
+    width: 280px;
+    padding: 8px;
+    border: 1px solid silver;
+}
+
+#form input:nth-of-type(2) {
+    padding: 6px 18px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid silver;
+    background-color: #ffcc00;
+    text-transform: uppercase;
+    transition: background-color 1s ease;
+}
+
+#form input:nth-of-type(2):hover {
+    background-color: #f7a919;
+}
+
+#features {
+    width: 100%;
+    margin: 15vh auto 10vh;
+}
+
+#features .item {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#work {
+    width: 100%;
+    text-align: center;
+}
+
+#pricing {
+    margin: 8vh auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#pricing .pricing-item {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#pricing .pricing-item h3 {
+    background-color: #e6d6eb;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+#pricing .pricing-item div {
+    line-height: 1.4;
+    padding: 10px;
+}
+
+#pricing .pricing-item div p:nth-of-type(1) {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#pricing .pricing-item div input {
+    margin: 20px 0 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid silver;
+    background-color: #ffcc00;
+    transition: background-color 1s ease;
+}
+
+#pricing .pricing-item div input:hover {
+    background-color: #f7a919;
+}
+
+#footer {
+    padding: 20px;
+    max-width: 70vw;
+    width: 100%;
+    margin: auto;
+    background-color: #e6d6eb;
+    text-align: right;
+}
+
+#footer .foot-link {
+    display: inline-flex;
+    gap: 25px;
+}
+
+#footer .foot-link a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-bar {
+        gap: 2vw;
+    }
+
+    main, #footer {
+        max-width: 85vw;
+    }
+
+    #work iframe {
+        width: 100%;
+        height: max(400px, auto);
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+}
